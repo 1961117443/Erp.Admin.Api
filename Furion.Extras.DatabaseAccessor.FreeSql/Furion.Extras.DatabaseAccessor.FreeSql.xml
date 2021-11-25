@@ -1,0 +1,1362 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Furion.Extras.DatabaseAccessor.FreeSqlEx</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.FreeSqlServiceCollectionExtensions">
+            <summary>
+            FreeSql 服务拓展类
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.FreeSqlServiceCollectionExtensions.AddFreeSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,FreeSql.DataType,System.Action{FreeSql.FreeSqlBuilder},System.Action{IFreeSql})">
+            <summary>
+            添加 FreeSql 拓展
+            </summary>
+            <param name="services"></param>
+            <param name="connectionString"></param>
+            <param name="dataType"></param>
+            <param name="buildAction"></param>
+            <param name="freeSqlAction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.FreeSqlServiceCollectionExtensions.AddFreeSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{FreeSql.FreeSqlBuilder},System.Action{IFreeSql})">
+            <summary>
+            添加 FreeSql 拓展
+            </summary>
+            <param name="services"></param>
+            <param name="buildAction"></param>
+            <param name="freeSqlAction"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeSql.FreeSqlPagedList`1">
+            <summary>
+            分页泛型集合
+            </summary>
+            <typeparam name="TEntity"> </typeparam>
+        </member>
+        <member name="P:FreeSql.FreeSqlPagedList`1.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlPagedList`1.PageSize">
+            <summary>
+            页容量
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlPagedList`1.TotalCount">
+            <summary>
+            总条数
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlPagedList`1.TotalPages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlPagedList`1.Items">
+            <summary>
+            当前页集合
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlPagedList`1.HasPrevPages">
+            <summary>
+            是否有上一页
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlPagedList`1.HasNextPages">
+            <summary>
+            是否有下一页
+            </summary>
+        </member>
+        <member name="T:FreeSql.FreeSqlPagedList">
+            <summary>
+            分页集合
+            </summary>
+        </member>
+        <member name="T:FreeSql.FreeSqlDbContextExtensions">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.FirstOrDefault``1(FreeSql.ISelect{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="T1"></typeparam>
+             <param name="entity"></param>
+             <param name="whereExpression"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.FirstOrDefaultAsync``1(FreeSql.ISelect{``0})">
+             <summary>
+            
+             </summary>
+             <typeparam name="T1"></typeparam>
+             <param name="entity"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.FirstOrDefaultAsync``1(FreeSql.ISelect{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="T1"></typeparam>
+             <param name="entity"></param>
+             <param name="whereExpression"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.ToPagedList``1(FreeSql.ISelect{``0},System.Int32,System.Int32)">
+            <summary>
+            分页拓展
+            </summary>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.ToPagedList``2(FreeSql.ISelect{``0},System.Int32,System.Int32)">
+             <summary>
+            
+             </summary>
+             <typeparam name="T1"></typeparam>
+             <typeparam name="TDto"></typeparam>
+             <param name="entity"></param>
+             <param name="pageIndex"></param>
+             <param name="pageSize"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.ToPagedList``2(FreeSql.ISelect{``0},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="T1"></typeparam>
+             <typeparam name="TReturn"></typeparam>
+             <param name="entity"></param>
+             <param name="pageIndex"></param>
+             <param name="pageSize"></param>
+             <param name="select"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.ToPagedListAsync``1(FreeSql.ISelect{``0},System.Int32,System.Int32)">
+            <summary>
+            分页拓展
+            </summary>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.ToPagedListAsync``2(FreeSql.ISelect{``0},System.Int32,System.Int32)">
+             <summary>
+            
+             </summary>
+             <typeparam name="T1"></typeparam>
+             <typeparam name="TDto"></typeparam>
+             <param name="entity"></param>
+             <param name="pageIndex"></param>
+             <param name="pageSize"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlDbContextExtensions.ToPagedListAsync``2(FreeSql.ISelect{``0},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="T1"></typeparam>
+             <typeparam name="TDto"></typeparam>
+             <param name="entity"></param>
+             <param name="pageIndex"></param>
+             <param name="pageSize"></param>
+             <param name="select"></param>
+             <returns></returns>
+        </member>
+        <member name="T:FreeSql.PagedQueryableExtensions">
+            <summary>
+            分页拓展类
+            </summary>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``3(FreeSql.ISelect{``0,``1},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``4(FreeSql.ISelect{``0,``1,``2},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``5(FreeSql.ISelect{``0,``1,``2,``3},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``6(FreeSql.ISelect{``0,``1,``2,``3,``4},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``7(FreeSql.ISelect{``0,``1,``2,``3,``4,``5},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``8(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``9(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``10(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``11(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``12(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``13(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``14(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``15(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="T14"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``16(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="T14"> </typeparam>
+            <typeparam name="T15"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedList``17(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15,``16}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="T14"> </typeparam>
+            <typeparam name="T15"> </typeparam>
+            <typeparam name="T16"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``3(FreeSql.ISelect{``0,``1},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> 选择的列 </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``4(FreeSql.ISelect{``0,``1,``2},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``5(FreeSql.ISelect{``0,``1,``2,``3},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``6(FreeSql.ISelect{``0,``1,``2,``3,``4},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``7(FreeSql.ISelect{``0,``1,``2,``3,``4,``5},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``8(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``9(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``10(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``11(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``12(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``13(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``14(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``15(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="T14"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``16(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="T14"> </typeparam>
+            <typeparam name="T15"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.PagedQueryableExtensions.ToPagedListAsync``17(FreeSql.ISelect{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15},System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15,``16}})">
+            <summary>
+            分页拓展
+            </summary>
+            <typeparam name="T1"> </typeparam>
+            <typeparam name="T2"> </typeparam>
+            <typeparam name="T3"> </typeparam>
+            <typeparam name="T4"> </typeparam>
+            <typeparam name="T5"> </typeparam>
+            <typeparam name="T6"> </typeparam>
+            <typeparam name="T7"> </typeparam>
+            <typeparam name="T8"> </typeparam>
+            <typeparam name="T9"> </typeparam>
+            <typeparam name="T10"> </typeparam>
+            <typeparam name="T11"> </typeparam>
+            <typeparam name="T12"> </typeparam>
+            <typeparam name="T13"> </typeparam>
+            <typeparam name="T14"> </typeparam>
+            <typeparam name="T15"> </typeparam>
+            <typeparam name="T16"> </typeparam>
+            <typeparam name="TReturn"> </typeparam>
+            <param name="entity"> </param>
+            <param name="pageIndex"> </param>
+            <param name="pageSize"> </param>
+            <param name="select"> </param>
+            <returns> </returns>
+        </member>
+        <member name="T:FreeSql.FreeSqlRepository">
+            <summary>
+            非泛型 FreeSql 仓储
+            </summary>
+        </member>
+        <member name="F:FreeSql.FreeSqlRepository._serviceProvider">
+            <summary>
+            服务提供器
+            </summary>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository.#ctor(System.IServiceProvider)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="serviceProvider"> 服务提供器 </param>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TEntity"> 实体类型 </typeparam>
+            <typeparam name="TKey"> 主键类型 </typeparam>
+            <returns> 仓储 </returns>
+        </member>
+        <member name="T:FreeSql.FreeSqlRepository`1">
+            <summary>
+            FreeSql 泛型仓储
+            </summary>
+            <typeparam name="TEntity"> </typeparam>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`1.#ctor(FreeSql.UnitOfWorkManager,FreeSql.IFreeSqlRepository)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="uowm"> </param>
+            <param name="freeSqlRepository"> </param>
+        </member>
+        <member name="T:FreeSql.FreeSqlRepository`2">
+            <summary>
+            FreeSql 泛型仓储
+            </summary>
+            <typeparam name="TEntity"> </typeparam>
+            <typeparam name="TKey"> </typeparam>
+        </member>
+        <member name="F:FreeSql.FreeSqlRepository`2._freeSqlRepository">
+            <summary>
+            非泛型 FreeSql 仓储
+            </summary>
+        </member>
+        <member name="F:FreeSql.FreeSqlRepository`2._db">
+            <summary>
+            初始化 SqlSugar 客户端
+            </summary>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.#ctor(FreeSql.UnitOfWorkManager,FreeSql.IFreeSqlRepository)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="uowm"> 工作单元 </param>
+            <param name="freeSqlRepository"> 非泛型 FreeSql 仓储 </param>
+        </member>
+        <member name="P:FreeSql.FreeSqlRepository`2.Entities">
+            <summary>
+            实体集合
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlRepository`2.Context">
+            <summary>
+            数据库上下文
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlRepository`2.DynamicDbContext">
+            <summary>
+            动态数据库上下文
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlRepository`2.Ado">
+            <summary>
+            原生 Ado 对象
+            </summary>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Change``1">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TChangeEntity"> 实体类型 </typeparam>
+            <returns> 仓储 </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TChangeEntity"> 实体类型 </typeparam>
+            <typeparam name="TChangeKey"> 主键类型 </typeparam>
+            <returns> 仓储 </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Get``1(`1)">
+            <summary>
+            获取单条记录
+            </summary>
+            <typeparam name="TDto"> </typeparam>
+            <param name="id"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Get``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="TDto"></typeparam>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Count(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取总数
+            </summary>
+            <param name="expression"> 条件 </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Any(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            检查是否存在
+            </summary>
+            <param name="expression"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Single(System.Object)">
+            <summary>
+            通过主键获取实体
+            </summary>
+            <param name="id"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.GetAsync``1(`1)">
+            <summary>
+            获取单条记录
+            </summary>
+            <typeparam name="TDto"> </typeparam>
+            <param name="id"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.GetAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.GetAsync``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="TDto"></typeparam>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.CountAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取总数
+            </summary>
+            <param name="expression"> 条件 </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.AnyAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            检查是否存在
+            </summary>
+            <param name="expression"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.SingleAsync(System.Object)">
+            <summary>
+            通过主键获取实体
+            </summary>
+            <param name="id"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Update(`0,System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.UpdateInclude(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)">
+            <summary>
+            更新一条记录中特定属性
+            </summary>
+            <param name="entity">实体</param>
+            <param name="columns">属性表达式</param>
+            <param name="ignoreQueryFilters">是否忽略过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.UpdateExclude(`0,System.String[],System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="propertyNames"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.UpdateAsync(`0,System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.UpdateIncludeAsync(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)">
+            <summary>
+            更新一条记录中特定属性
+            </summary>
+            <param name="entity">实体</param>
+            <param name="columns">属性表达式</param>
+            <param name="ignoreQueryFilters">是否忽略过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.UpdateExcludeAsync(`0,System.String[],System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="propertyNames"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.SoftDelete(`1)">
+            <summary>
+            软删除 （IsDeleted）
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.SoftDelete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            软删除 （IsDeleted）
+            </summary>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.SoftDeleteAsync(`1)">
+            <summary>
+            软删除 （IsDeleted）
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.SoftDeleteAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            软删除 （IsDeleted）
+            </summary>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.AsQueryable">
+            <summary>
+            </summary>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.AsQueryable(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="predicate"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.Where(System.Boolean,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Boolean)">
+            <summary>
+            根据条件执行表达式查询多条记录
+            </summary>
+            <param name="condition"> 条件 </param>
+            <param name="predicate"> 表达式 </param>
+            <param name="ignoreQueryFilters"> 是否忽略查询过滤器 </param>
+            <returns> 数据库中的多个实体 </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.FirstOrDefaultAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            </summary>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.FreeSqlRepository`2.IgnoreNullValues(`0,System.String[],System.Func{System.Object,System.Boolean},System.Nullable{System.Boolean})">
+            <summary>
+            忽略空值属性
+            </summary>
+            <param name="entity"> </param>
+            <param name="excludeProperty"> </param>
+            <param name="ignore"> </param>
+            <param name="ignoreNullValues"> </param>
+        </member>
+        <member name="T:FreeSql.IFreeSqlRepository">
+            <summary>
+            非泛型 FreeSql 仓储
+            </summary>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TEntity"> 实体类型 </typeparam>
+            <typeparam name="TKey"> 主键类型 </typeparam>
+            <returns> 仓储 </returns>
+        </member>
+        <member name="T:FreeSql.IFreeSqlRepository`1">
+            <summary>
+            </summary>
+            <typeparam name="TEntity"> </typeparam>
+        </member>
+        <member name="T:FreeSql.IFreeSqlRepository`2">
+            <summary>
+            FreeSql 仓储接口定义
+            </summary>
+            <typeparam name="TEntity"> </typeparam>
+            <typeparam name="TKey"> </typeparam>
+        </member>
+        <member name="P:FreeSql.IFreeSqlRepository`2.DynamicDbContext">
+            <summary>
+            动态数据库上下文
+            </summary>
+        </member>
+        <member name="P:FreeSql.IFreeSqlRepository`2.Ado">
+            <summary>
+            原生 Ado 对象
+            </summary>
+        </member>
+        <member name="P:FreeSql.IFreeSqlRepository`2.Entities">
+            <summary>
+            实体集合
+            </summary>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Change``1">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TChangeEntity"> 实体类型 </typeparam>
+            <returns> 仓储 </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Change``2">
+            <summary>
+            切换仓储
+            </summary>
+            <typeparam name="TChangeEntity"> 实体类型 </typeparam>
+            <typeparam name="TChangeKey"> 主键类型 </typeparam>
+            <returns> 仓储 </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Count(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取总数
+            </summary>
+            <param name="whereExpression"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.CountAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取总数
+            </summary>
+            <param name="whereExpression"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Any(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            检查是否存在
+            </summary>
+            <param name="whereExpression"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.AnyAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            检查是否存在
+            </summary>
+            <param name="whereExpression"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Single(System.Object)">
+            <summary>
+            通过主键获取实体
+            </summary>
+            <param name="id"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.SingleAsync(System.Object)">
+            <summary>
+            通过主键获取实体
+            </summary>
+            <param name="id"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Where(System.Boolean,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="condition"> </param>
+            <param name="predicate"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.AsQueryable">
+            <summary>
+            构建查询分析器
+            </summary>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.FirstOrDefaultAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            </summary>
+            <param name="whereExpression"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Get(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Get``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="TDto"></typeparam>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.GetAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.GetAsync``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+             <summary>
+            
+             </summary>
+             <typeparam name="TDto"></typeparam>
+             <param name="exp"></param>
+             <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.Update(`0,System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.UpdateInclude(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)">
+            <summary>
+            更新一条记录中特定属性
+            </summary>
+            <param name="entity">实体</param>
+            <param name="columns">属性表达式</param>
+            <param name="ignoreQueryFilters">是否忽略过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.UpdateAsync(`0,System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.UpdateIncludeAsync(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)">
+            <summary>
+            更新一条记录中特定属性
+            </summary>
+            <param name="entity">实体</param>
+            <param name="columns">属性表达式</param>
+            <param name="ignoreQueryFilters">是否忽略过滤器</param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.UpdateExclude(`0,System.String[],System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="propertyNames"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.UpdateExcludeAsync(`0,System.String[],System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            </summary>
+            <param name="entity"> </param>
+            <param name="propertyNames"> </param>
+            <param name="ignoreNullValues"> </param>
+            <param name="ignoreQueryFilters"> </param>
+            <returns> </returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.SoftDelete(`1)">
+            <summary>
+            软删除 （IsDeleted = true）
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.SoftDelete(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            软删除 （IsDeleted = true）
+            </summary>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.SoftDeleteAsync(`1)">
+            <summary>
+            软删除 （IsDeleted = true）
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeSql.IFreeSqlRepository`2.SoftDeleteAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            软删除 （IsDeleted = true）
+            </summary>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeSql.FreeSqlUnitOfWorkAttribute">
+            <summary>
+            FreeSql 工作单元配置特性
+            </summary>
+        </member>
+        <member name="M:FreeSql.FreeSqlUnitOfWorkAttribute.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlUnitOfWorkAttribute.Propagation">
+            <summary>
+            事务传播方式
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlUnitOfWorkAttribute.IsolationLevel">
+            <summary>
+            事务隔离级别
+            </summary>
+        </member>
+        <member name="T:FreeSql.FreeSqlUnitOfWorkFilter">
+            <summary>
+            FreeSql 工作单元拦截器
+            </summary>
+        </member>
+        <member name="F:FreeSql.FreeSqlUnitOfWorkFilter.FilterOrder">
+            <summary>
+            过滤器排序
+            </summary>
+        </member>
+        <member name="P:FreeSql.FreeSqlUnitOfWorkFilter.Order">
+            <summary>
+            排序属性
+            </summary>
+        </member>
+        <member name="F:FreeSql.FreeSqlUnitOfWorkFilter._unitOfWorkManager">
+            <summary>
+            FreeSql工作单元管理器
+            </summary>
+        </member>
+        <member name="F:FreeSql.FreeSqlUnitOfWorkFilter._unitOfWork">
+            <summary>
+            </summary>
+            <summary>
+            </summary>
+        </member>
+        <member name="M:FreeSql.FreeSqlUnitOfWorkFilter.#ctor(FreeSql.UnitOfWorkManager)">
+            <summary>
+            
+            </summary>
+            <param name="unitOfWorkManager"></param>
+        </member>
+        <member name="M:FreeSql.FreeSqlUnitOfWorkFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            </summary>
+            <param name="context"> </param>
+            <param name="next"> </param>
+            <returns> </returns>
+        </member>
+    </members>
+</doc>

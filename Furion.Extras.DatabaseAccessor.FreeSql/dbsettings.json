@@ -1,0 +1,27 @@
+{
+  "DataBase": {
+    //业务数据库
+    "DefaultConnection": {
+      "DataType": "MySql", //MySql
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy"
+      //"SlaveConnectionStrings": [
+      //  "Driver={DM8 ODBC DRIVER};Server=127.0.0.1:5236;UID=SYSDBA;PWD=SYSDBA"
+      //]
+    },
+    //租户数据库 没有配置的话，默认业务数据库
+    "TenantConnection": {
+      "DataType": "MySql",
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy"
+    },
+    //配置数据库 没有配置的话，默认业务数据库
+    "SysDbConnection": {
+      "DataType": "MySql",
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy"
+    },
+    //日志数据库 没有配置的话，默认业务数据库
+    "LogDbConnection": {
+      "DataType": "MySql",
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy"
+    }
+  }
+}

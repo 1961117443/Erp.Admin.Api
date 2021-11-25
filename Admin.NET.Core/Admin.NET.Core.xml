@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Admin.NET.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Admin.NET.Core.Utility.NpoiExcelImportHelper.ExcelToDataTable(System.String,System.Boolean@,System.String@)">
+            <summary>
+            根据文件路径读取excel文件
+            </summary>
+            <param name="filePath"></param>
+            <param name="isSuccess"></param>
+            <param name="resultMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Core.Utility.NpoiExcelImportHelper.ExcelToDataTable(System.IO.Stream,System.String,System.Boolean@,System.String@)">
+            <summary>
+            读取excel表格中的数据,将Excel文件流转化为dataTable数据源  
+            默认第一行为标题 
+            </summary>
+            <param name="stream">excel文档文件流</param>
+            <param name="fileType">文档格式</param>
+            <param name="isSuccess">是否转化成功</param>
+            <param name="resultMsg">转换结果消息</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>1.0.4.0</Version>
+    <Description>
+      【非官方】适用于Furion框架的FreeSql拓展
+      仓库地址：https://gitee.com/YaChengMu/furion-extras
+    </Description>
+    <PackageId>Furion.Extras.DatabaseAccessor.FreeSqlEx</PackageId>
+    <AssemblyName>Furion.Extras.DatabaseAccessor.FreeSqlEx</AssemblyName>
+    <RootNamespace>Furion.Extras.DatabaseAccessor.FreeSqlEx</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Repositories\FactoryRepositories\**" />
+    <Compile Remove="Repositories\SimpleRepositories\**" />
+    <EmbeddedResource Remove="Repositories\FactoryRepositories\**" />
+    <EmbeddedResource Remove="Repositories\SimpleRepositories\**" />
+    <None Remove="Repositories\FactoryRepositories\**" />
+    <None Remove="Repositories\SimpleRepositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="dbsettings.Development.json" />
+    <None Remove="dbsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="dbsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FreeSql" Version="2.6.100" />
+    <PackageReference Include="FreeSql.All" Version="2.6.100" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties dbsettings_1development_1json__JsonSchema="https://raw.githubusercontent.com/dolittle/Runtime/v5.1.1/Schemas/Tenancy/tenants.json" /></VisualStudio></ProjectExtensions>
+</Project>

@@ -1,0 +1,42 @@
+{
+  "DataBase": {
+    //业务数据库
+    "DefaultConnection": {
+      "DataType": "MySql", // OdbcDameng
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy"
+      //Driver={DM8 ODBC DRIVER};Server=127.0.0.1:5236;UID=SYSDBA;PWD=SYSDBA
+      //"server=127.0.0.1;user id=root;password=123456;persistsecurityinfo=True;database=developtest"
+      //"SlaveConnectionStrings": [
+      //  "Driver={DM8 ODBC DRIVER};Server=127.0.0.1:5236;UID=SYSDBA;PWD=SYSDBA"
+      //]
+    },
+    //租户数据库 没有配置的话，默认业务数据库
+    "TenantConnection": {
+      "DataType": "MySql",
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy" //Driver={DM8 ODBC DRIVER};Server=127.0.0.1:5236;UID=SYSDBA;PWD=SYSDBA
+    },
+    //配置数据库 没有配置的话，默认业务数据库
+    "SysDbConnection": {
+      "DataType": "MySql",
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy" //Driver={DM8 ODBC DRIVER};Server=127.0.0.1:5236;UID=SYSDBA;PWD=SYSDBA
+    },
+    //日志数据库 没有配置的话，默认业务数据库
+    "LogDbConnection": {
+      "DataType": "MySql",
+      "ConnectionString": "server=19.133.60.117;user id=root;password=123abc;persistsecurityinfo=True;database=developstatisticseconomy" //Driver={DM8 ODBC DRIVER};Server=127.0.0.1:5236;UID=SYSDBA;PWD=SYSDBA
+    }
+  },
+  //内部需要自动初始化的实体
+  "PrivateEntity": {
+    //业务数据库
+    "DefaultConnection": "Admin.NET.Application.Entity.Car",
+    //租户数据库 没有配置的话，默认业务数据库
+    "TenantConnection": "Furion.Extras.Admin.NET.SysTenant",
+    //配置数据库 没有配置的话，默认业务数据库
+    "SysDbConnection": "Furion.Extras.Admin.NET.SysApp, Furion.Extras.Admin.NET.SysCodeGen, Furion.Extras.Admin.NET.SysCodeGenConfig, Furion.Extras.Admin.NET.SysConfig, Furion.Extras.Admin.NET.SysDictData, Furion.Extras.Admin.NET.SysDictType, Furion.Extras.Admin.NET.SysEmp, Furion.Extras.Admin.NET.SysEmpPos, Furion.Extras.Admin.NET.SysFile, Furion.Extras.Admin.NET.SysMenu, Furion.Extras.Admin.NET.SysNotice, Furion.Extras.Admin.NET.SysOauthUser, Furion.Extras.Admin.NET.SysOrg, Furion.Extras.Admin.NET.SysPos, Furion.Extras.Admin.NET.SysRole, Furion.Extras.Admin.NET.SysTimer, Furion.Extras.Admin.NET.SysUser, Furion.Extras.Admin.NET.SysUserRole, Furion.Extras.Admin.NET.SysRoleMenu,Furion.Extras.Admin.NET.SysUserDataScope",
+    //日志数据库 没有配置的话，默认业务数据库
+    "LogDbConnection": "Furion.Extras.Admin.NET.SysLogVis, Furion.Extras.Admin.NET.SysLogOp, Furion.Extras.Admin.NET.SysLogEx, Furion.Extras.Admin.NET.SysLogAudit"
+  },
+  "UseAutoSyncStructure": false
+}
+

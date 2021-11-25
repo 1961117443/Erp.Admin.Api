@@ -1,0 +1,3492 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Admin.NET.Application</name>
+    </assembly>
+    <members>
+        <member name="T:Admin.NET.Application.Entity.Car">
+            <summary>
+            车辆信息（测试通用增删查改）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.Indicator.Vaild">
+            <summary>
+            允许编辑
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.Indicator.FilePath">
+            <summary>
+            导出的文件路径（指标进度表的路径）
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_enterprise">
+            <summary>
+            企业上报数量设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_enterprise.Month">
+            <summary>
+            月份
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_enterprise.IndicatorType">
+            <summary>
+            指标类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_enterprise.Shiwan">
+            <summary>
+            石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_enterprise.Zhangcha">
+            <summary>
+            张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_enterprise.Nanzhuang">
+            <summary>
+            南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_enterprise.Zumiao">
+            <summary>
+            祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.base_indicator_doc.Month">
+            <summary>
+            所属月份
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.IndicatorDocLog">
+            <summary>
+            指标文档上传记录
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.IndicatorDocLog.Month">
+            <summary>
+            月份
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.IndicatorDocLog.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.IndicatorDocLog.FileName">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.IndicatorDocLog.DocId">
+            <summary>
+            指标文档id E_IndicatorDocument
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_dictionary.Code">
+            <summary>
+            字典编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_dictionary.Name">
+            <summary>
+            字典名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_dictionary.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_dictionary.IndicatorType">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_dictionary.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_a">
+            <summary>
+            b204-1进度数据
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_a.qydm">
+            <summary>
+            企业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_a.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_a.dycz">
+            <summary>
+            当月产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_a.jnljcz">
+            <summary>
+            今年累计产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_a.dyqncz">
+            <summary>
+            当月去年同期产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_a.qntqljcz">
+            <summary>
+            去年同期累计产值
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.user_indicator_doc_a">
+            <summary>
+            表外企业数据（b204-1进度数据） 
+            用户自行录入的数据
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_a.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_b">
+            <summary>
+            MKL企业名录
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_b.qydm">
+            <summary>
+            企业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_b.xq">
+            <summary>
+            辖区
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_c">
+            <summary>
+            PPI价格指数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_c.dm">
+            <summary>
+            代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_c.mc">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_c.byjgzs">
+            <summary>
+            本月价格指数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_c.ljjgzs">
+            <summary>
+            累计
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_d">
+            <summary>
+            增值率表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.dm">
+            <summary>
+            代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.mc">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d03">
+            <summary>
+            总计本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d04">
+            <summary>
+            总计去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d05">
+            <summary>
+            轻工业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d06">
+            <summary>
+            轻工业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d07">
+            <summary>
+            重工业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d08">
+            <summary>
+            重工业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d09">
+            <summary>
+            国有企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d10">
+            <summary>
+            国有企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d11">
+            <summary>
+            集体企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d12">
+            <summary>
+            集体企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d13">
+            <summary>
+            股份合作企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d14">
+            <summary>
+            股份合作企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d15">
+            <summary>
+            股份制企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d16">
+            <summary>
+            股份制企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d17">
+            <summary>
+            外商及港澳台本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d18">
+            <summary>
+            外商及港澳台去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d19">
+            <summary>
+            其他经济类型本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d20">
+            <summary>
+            其他经济类型去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d21">
+            <summary>
+            国有控股企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d22">
+            <summary>
+            国有控股企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d23">
+            <summary>
+            非公有工业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d24">
+            <summary>
+            非公有工业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d25">
+            <summary>
+            大中型工业企本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d26">
+            <summary>
+            大中型工业企去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d27">
+            <summary>
+            大中型工业企 其中：国有企业 本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d28">
+            <summary>
+            大中型工业企 其中：国有企业 去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d29">
+            <summary>
+            私有企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d30">
+            <summary>
+            私有企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d31">
+            <summary>
+            民营企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_d.indicator_doc_d32">
+            <summary>
+            民营企业去年
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_e">
+            <summary>
+            206固定资产投资项目情况
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.xmbm">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.bntz">
+            <summary>
+            本年完成投资
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.xmlb">
+            <summary>
+            项目类别
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.hydm2">
+            <summary>
+            行业代码(GB/T4754-2017)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.jzgc">
+            <summary>
+            建筑工程
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_e.azgc">
+            <summary>
+            安装工程
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.user_indicator_doc_e">
+            <summary>
+            用户自行录入的数据 （固定资产投资额-区内报数-206固定资产投资项目情况）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.Datatype">
+            <summary>
+            区内报数类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.xmbh">
+            <summary>
+            项目编号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.xzqh">
+            <summary>
+            项目镇街
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.tzlj">
+            <summary>
+            本年投资累计
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.ccbl">
+            <summary>
+            分数到禅城比例
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.ccje">
+            <summary>
+            分数到禅城（万元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.nzbl">
+            <summary>
+            南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.swbl">
+            <summary>
+            石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.zcbl">
+            <summary>
+            张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.zmbl">
+            <summary>
+            祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.jzje">
+            <summary>
+            建筑金额
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_e.azje">
+            <summary>
+            安装金额
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_f">
+            <summary>
+            X204-1房地产开发项目经营情况（投资）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.bnwctzby">
+            <summary>
+            本年完成投资本月
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.xmbm">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.byjzgc">
+            <summary>
+            建筑工程本月
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_f.byazgc">
+            <summary>
+            安装工程本月
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.user_indicator_doc_f">
+            <summary>
+            用户自行录入的数据 （固定资产投资额-区内报数-x204-1房地产开发项目经营情况）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.Datatype">
+            <summary>
+            区内报数类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.xmbh">
+            <summary>
+            项目编号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.xzqh">
+            <summary>
+            项目镇街
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.tzlj">
+            <summary>
+            本年投资累计
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.ccbl">
+            <summary>
+            分数到禅城比例
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.ccje">
+            <summary>
+            分数到禅城（万元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.nzbl">
+            <summary>
+            南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.swbl">
+            <summary>
+            石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.zcbl">
+            <summary>
+            张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.zmbl">
+            <summary>
+            祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.jzje">
+            <summary>
+            建筑金额
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.user_indicator_doc_f.azje">
+            <summary>
+            安装金额
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_g">
+            <summary>
+            区外报数固投跨市分数项目分数情况表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.gdzc_cc">
+            <summary>
+            固定资产投资额-禅城
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.gdzc_nz">
+            <summary>
+            固定资产投资额-南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.gdzc_sw">
+            <summary>
+            固定资产投资额-石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.gdzc_zc">
+            <summary>
+            固定资产投资额-张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.gdzc_zm">
+            <summary>
+            固定资产投资额-祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.jzaz_cc">
+            <summary>
+            建筑安装工程投资-禅城
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.jzaz_nz">
+            <summary>
+            建筑安装工程投资-南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.jzaz_sw">
+            <summary>
+            建筑安装工程投资-石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.jzaz_zc">
+            <summary>
+            建筑安装工程投资-张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_g.jzaz_zm">
+            <summary>
+            建筑安装工程投资-祖庙
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_h">
+            <summary>
+            投资科去年同期指标
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_h.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_h.gdzc">
+            <summary>
+            固定资产投资额(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_h.gy">
+            <summary>
+            工业投资(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_h.gyjg">
+            <summary>
+            工业技改投资(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_h.spf">
+            <summary>
+            商品房销售面积(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_h.jzy">
+            <summary>
+            建筑业总产值(千元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_h.jagc">
+            <summary>
+            建安工程(万元)
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_i">
+            <summary>
+            206采集进度查看
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.ybs">
+            <summary>
+            应报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.bs">
+            <summary>
+            已报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.wbs">
+            <summary>
+            未报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.sbl">
+            <summary>
+            上报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.zbl">
+            <summary>
+            直报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.zyl">
+            <summary>
+            直验率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.ysl">
+            <summary>
+            验收率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.ystg">
+            <summary>
+            验收通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.ysbtg">
+            <summary>
+            验收不通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.xgwsb">
+            <summary>
+            返回修改未上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_i.xgzsb">
+            <summary>
+            返回修改再上报
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_j">
+            <summary>
+            X204-1采集进度查看
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.ybs">
+            <summary>
+            应报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.bs">
+            <summary>
+            已报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.wbs">
+            <summary>
+            未报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.sbl">
+            <summary>
+            上报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.zbl">
+            <summary>
+            直报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.zyl">
+            <summary>
+            直验率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.ysl">
+            <summary>
+            验收率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.ystg">
+            <summary>
+            验收通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.ysbtg">
+            <summary>
+            验收不通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.xgwsb">
+            <summary>
+            返回修改未上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_j.xgzsb">
+            <summary>
+            返回修改再上报
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_k">
+            <summary>
+            （E204-1）批发和零售业商品销售和库存
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_k.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_k.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_k.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_k.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_k.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_k.ljje">
+            <summary>
+            商品销售额累计（千元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_k.tqljje">
+            <summary>
+            商品销售额上年同期累计（千元）（上期）
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_l">
+            <summary>
+            （S204-1）住宿和餐饮业经营情况
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_l.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_l.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_l.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_l.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_l.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_l.ljje">
+            <summary>
+            商品销售额累计（千元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_l.tqljje">
+            <summary>
+            商品销售额上年同期累计（千元）（上期）
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_m">
+            <summary>
+            C204-1建筑业企业生产经营情况
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_m.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_m.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_m.zcz">
+            <summary>
+            建筑业总产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_m.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_m.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_m.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_n">
+            <summary>
+            C204-1建筑业企业生产经营情况(上季度)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_n.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_n.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_n.zcz">
+            <summary>
+            建筑业总产值
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_o">
+            <summary>
+            C204-1采集进度查看
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.ybs">
+            <summary>
+            应报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.bs">
+            <summary>
+            已报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.wbs">
+            <summary>
+            未报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.sbl">
+            <summary>
+            上报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.zbl">
+            <summary>
+            直报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.zyl">
+            <summary>
+            直验率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.ysl">
+            <summary>
+            验收率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.ystg">
+            <summary>
+            验收通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.ysbtg">
+            <summary>
+            验收不通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.xgwsb">
+            <summary>
+            返回修改未上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_o.xgzsb">
+            <summary>
+            返回修改再上报
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_p">
+            <summary>
+            建筑业在库企业名单
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_p.jgdm">
+            <summary>
+            统计机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_p.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_p.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_p.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_p.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_p.bblb">
+            <summary>
+            报表类别
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_q">
+            <summary>
+            X204-1房地产开发项目经营情况（面积）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.bnspfxsmj">
+            <summary>
+            本年商品房销售面积——合计
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.xmbm">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_q.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Entity.indicator_doc_z">
+            <summary>
+            任务目标设定
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.zbmc">
+            <summary>
+            指标
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.xq">
+            <summary>
+            辖区
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.ljzl">
+            <summary>
+            累计总量(亿元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.ljzs">
+            <summary>
+            累计增速
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.mbzl">
+            <summary>
+            目标总量(亿元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.mbzs">
+            <summary>
+            目标增速 
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.yqzl">
+            <summary>
+            预期总量(亿元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.yqzs">
+            <summary>
+            预期增速
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.indicator">
+            <summary>
+            指标id E_Indicator
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.indicator_doc_z.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.JurisdictionAdjust.Month">
+            <summary>
+            月份
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.JurisdictionAdjust.ProjectNo">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.JurisdictionAdjust.SourceAreaCode">
+            <summary>
+            管理机构（原）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Entity.JurisdictionAdjust.AreaCode">
+            <summary>
+            管理机构（新）
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.CarService.Add(Admin.NET.Application.Dto.CarAdd)">
+            <summary>
+            新增
+            </summary>
+            <param name="addDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.CarService.Print(System.Int64)">
+            <summary>
+            继承通用类之后默认会生成API
+            无用或者不想暴露的通用方法可以重写后打上[NonAction]特性
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.CarImport">
+            <summary>
+            导入支持各种配置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.CarImport.IsDeleted">
+            <summary>
+            bool和枚举会自动生成下拉选择框，也可自动定义文本内容
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.Dto.CarImport.Filter``1(Magicodes.ExporterAndImporter.Core.Models.ImportResult{``0})">
+            <summary>
+            导入结果筛选器
+            </summary>
+            <param name="importResult"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Dto.CarImport.Filter(System.Collections.Generic.List{Magicodes.ExporterAndImporter.Core.Models.ImporterHeaderInfo})">
+            <summary>
+            导入列头筛选器
+            </summary>
+            <param name="importerHeaderInfos"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.CarExport">
+            <summary>
+            导出支持各种配置
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.Dto.CarExport.Filter(Magicodes.ExporterAndImporter.Core.Models.ExporterHeaderInfo)">
+            <summary>
+            表头筛选器
+            </summary>
+            <param name="exporterHeaderInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.IndicatorDocCImport">
+            <summary>
+            导入支持各种配置
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.IndicatorDocDImport">
+            <summary>
+            导入支持各种配置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d03">
+            <summary>
+            总计本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d04">
+            <summary>
+            总计去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d05">
+            <summary>
+            轻工业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d06">
+            <summary>
+            轻工业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d07">
+            <summary>
+            重工业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d08">
+            <summary>
+            重工业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d09">
+            <summary>
+            国有企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d10">
+            <summary>
+            国有企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d11">
+            <summary>
+            集体企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d12">
+            <summary>
+            集体企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d13">
+            <summary>
+            股份合作企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d14">
+            <summary>
+            股份合作企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d15">
+            <summary>
+            股份制企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d16">
+            <summary>
+            股份制企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d17">
+            <summary>
+            外商及港澳台本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d18">
+            <summary>
+            外商及港澳台去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d19">
+            <summary>
+            其他经济类型本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d20">
+            <summary>
+            其他经济类型去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d21">
+            <summary>
+            国有控股企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d22">
+            <summary>
+            国有控股企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d23">
+            <summary>
+            非公有工业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d24">
+            <summary>
+            非公有工业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d25">
+            <summary>
+            大中型工业企本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d26">
+            <summary>
+            大中型工业企去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d27">
+            <summary>
+            大中型工业企 其中：国有企业 本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d28">
+            <summary>
+            大中型工业企 其中：国有企业 去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d29">
+            <summary>
+            私有企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d30">
+            <summary>
+            私有企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d31">
+            <summary>
+            民营企业本年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocDImport.indicator_doc_d32">
+            <summary>
+            民营企业去年
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.xmbm">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.bntz">
+            <summary>
+            本年完成投资
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.xmlb">
+            <summary>
+            项目类别
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.hydm2">
+            <summary>
+            行业代码(GB/T4754-2017)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.jzgc">
+            <summary>
+            建筑工程
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocEImport.azgc">
+            <summary>
+            安装工程
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.ybs">
+            <summary>
+            应报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.bs">
+            <summary>
+            已报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.wbs">
+            <summary>
+            未报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.sbl">
+            <summary>
+            上报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.zbl">
+            <summary>
+            直报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.zyl">
+            <summary>
+            直验率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.ysl">
+            <summary>
+            验收率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.ystg">
+            <summary>
+            验收通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.ysbtg">
+            <summary>
+            验收不通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.xgwsb">
+            <summary>
+            返回修改未上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocIImport.xgzsb">
+            <summary>
+            返回修改再上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.ybs">
+            <summary>
+            应报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.bs">
+            <summary>
+            已报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.wbs">
+            <summary>
+            未报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.sbl">
+            <summary>
+            上报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.zbl">
+            <summary>
+            直报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.zyl">
+            <summary>
+            直验率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.ysl">
+            <summary>
+            验收率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.ystg">
+            <summary>
+            验收通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.ysbtg">
+            <summary>
+            验收不通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.xgwsb">
+            <summary>
+            返回修改未上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocJImport.xgzsb">
+            <summary>
+            返回修改再上报
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.IndicatorDocGImport">
+            <summary>
+            区外报数固投跨市分数项目分数情况表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.gdzc_cc">
+            <summary>
+            固定资产投资额-禅城
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.gdzc_nz">
+            <summary>
+            固定资产投资额-南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.gdzc_sw">
+            <summary>
+            固定资产投资额-石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.gdzc_zc">
+            <summary>
+            固定资产投资额-张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.gdzc_zm">
+            <summary>
+            固定资产投资额-祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.jzaz_cc">
+            <summary>
+            建筑安装工程投资-禅城
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.jzaz_nz">
+            <summary>
+            建筑安装工程投资-南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.jzaz_sw">
+            <summary>
+            建筑安装工程投资-石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.jzaz_zc">
+            <summary>
+            建筑安装工程投资-张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocGImport.jzaz_zm">
+            <summary>
+            建筑安装工程投资-祖庙
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.IndicatorDocHImport">
+            <summary>
+            区外报数固投跨市分数项目分数情况表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocHImport.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocHImport.gdzc">
+            <summary>
+            固定资产投资额(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocHImport.gy">
+            <summary>
+            工业投资(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocHImport.gyjg">
+            <summary>
+            工业技改投资(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocHImport.spf">
+            <summary>
+            商品房销售面积(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocHImport.jzy">
+            <summary>
+            建筑业总产值(千元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocHImport.jagc">
+            <summary>
+            建安工程(万元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.ybs">
+            <summary>
+            应报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.bs">
+            <summary>
+            已报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.wbs">
+            <summary>
+            未报数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.sbl">
+            <summary>
+            上报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.zbl">
+            <summary>
+            直报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.zyl">
+            <summary>
+            直验率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.ysl">
+            <summary>
+            验收率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.ystg">
+            <summary>
+            验收通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.ysbtg">
+            <summary>
+            验收不通过
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.xgwsb">
+            <summary>
+            返回修改未上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocOImport.xgzsb">
+            <summary>
+            返回修改再上报
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocMImport.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocMImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocMImport.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocMImport.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocMImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocMImport.zcz">
+            <summary>
+            建筑业总产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocNImport.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocNImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocNImport.zcz">
+            <summary>
+            建筑业总产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocPImport.jgdm">
+            <summary>
+            统计机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocPImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocPImport.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocPImport.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocPImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocKImport.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocKImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocKImport.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocKImport.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocKImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocKImport.ljje">
+            <summary>
+            商品销售额累计（千元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocKImport.tqljje">
+            <summary>
+            商品销售额上年同期累计（千元）（上期）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocLImport.jgdm">
+            <summary>
+            统计机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocLImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocLImport.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocLImport.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocLImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocLImport.ljje">
+            <summary>
+            商品销售额累计（千元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocLImport.tqljje">
+            <summary>
+            商品销售额上年同期累计（千元）（上期）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.xmbm">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.bnwctzby">
+            <summary>
+            本年完成投资本月
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.byjzgc">
+            <summary>
+            建筑工程本月
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocFImport.byazgc">
+            <summary>
+            安装工程本月
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.jgdm">
+            <summary>
+            组织机构代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.dwmc">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.gljg">
+            <summary>
+            管理机构
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.xmbm">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocQImport.bnspfxsmj">
+            <summary>
+            本年商品房销售面积——合计
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.zbmc">
+            <summary>
+            指标
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.xq">
+            <summary>
+            辖区
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.ljzl">
+            <summary>
+            累计总量(亿元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.ljzs">
+            <summary>
+            累计增速
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.mbzl">
+            <summary>
+            目标总量(亿元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.mbzs">
+            <summary>
+            目标增速 
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.yqzl">
+            <summary>
+            预期总量(亿元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocZImport.yqzs">
+            <summary>
+            预期增速
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.DocImportDto.month">
+            <summary>
+            月份
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.DocImportDto.filePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocADetail.qydm">
+            <summary>
+            企业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocADetail.hydm">
+            <summary>
+            行业代码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocADetail.xzqh">
+            <summary>
+            行政区划
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocADetail.jnljcz">
+            <summary>
+            今年累计产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocADetail.qntqljcz">
+            <summary>
+            当月去年同期产值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.xmbh">
+            <summary>
+            项目编号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.xmmc">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.xzqh">
+            <summary>
+            项目镇街
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.tzlj">
+            <summary>
+            本年投资累计
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.ccbl">
+            <summary>
+            分数到禅城比例
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.ccje">
+            <summary>
+            分数到禅城（万元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.nzbl">
+            <summary>
+            南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.swbl">
+            <summary>
+            石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.zcbl">
+            <summary>
+            张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.zmbl">
+            <summary>
+            祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.jzje">
+            <summary>
+            建筑金额（万元）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocBDetail.azje">
+            <summary>
+            安装金额
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.MonthDto.CurMonth">
+            <summary>
+            当前月份
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.MonthDto.PreMonth">
+            <summary>
+            上月分
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorCategoryItem.id">
+            <summary>
+            指标类型id（E_IndicatorCategory : a,b,c,d,e,f）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorCategoryItem.name">
+            <summary>
+            指标类型名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorCategoryItem.updateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorCategoryItem.updateUserName">
+            <summary>
+            更新人
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorCategoryItem.apiUrl">
+            <summary>
+            数据请求地址
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocItem.id">
+            <summary>
+            文档id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocItem.filePath">
+            <summary>
+            文档路径 （上传后返回前端的是base64格式的字符串）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocItem.name">
+            <summary>
+            标准的文件名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocItem.fileName">
+            <summary>
+            文档名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocItem.createTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDocItem.createUserName">
+            <summary>
+            更新人
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.BaseIndicatorDto.month">
+            <summary>
+            月份
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.BaseIndicatorDto.docs">
+            <summary>
+            文档集合
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.ReportNumDto">
+            <summary>
+            应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.ReportNumDto.shiwan">
+            <summary>
+            石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.ReportNumDto.zhangcha">
+            <summary>
+            张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.ReportNumDto.nanzhuang">
+            <summary>
+            南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.ReportNumDto.zumiao">
+            <summary>
+            祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.ReportNumDto.total">
+            <summary>
+            总数
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.JurisdictionAdjustDetail">
+            <summary>
+            调整归属辖区项目模型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.JurisdictionAdjustDetail.xmbh">
+            <summary>
+            项目编码
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.JurisdictionAdjustDetail.source">
+            <summary>
+            管理机构（原）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.JurisdictionAdjustDetail.target">
+            <summary>
+            管理机构（新）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.nums">
+            <summary>
+            应报企业数量
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.enterprises">
+            <summary>
+            表外企业数据
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.investment">
+            <summary>
+            区内报数-206固定资产投资项目情况
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.management">
+            <summary>
+            区内报数-x204-1房地产开发项目经营情况
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.pf_nums">
+            <summary>
+            批发-应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.ls_nums">
+            <summary>
+            零售-应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.zs_nums">
+            <summary>
+            住宿-应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.cy_nums">
+            <summary>
+            餐饮-应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.IndicatorDto.items">
+            <summary>
+            调整归属辖区项目
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.AIndicatorDto">
+            <summary>
+            规上工业增加值提交对象
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.AIndicatorDto.nums">
+            <summary>
+            应报企业数量
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.AIndicatorDto.enterprises">
+            <summary>
+            表外企业数据
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.BIndicatorDto">
+            <summary>
+            固定资产投资额/工业投资/工业技改投资 提交对象
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.BIndicatorDto.investment">
+            <summary>
+            区内报数-206固定资产投资项目情况
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.BIndicatorDto.management">
+            <summary>
+            区内报数-x204-1房地产开发项目经营情况
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.CIndicatorDto">
+            <summary>
+            批发/零售/住宿/餐饮业销售额
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.CIndicatorDto.pf_nums">
+            <summary>
+            批发-应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.CIndicatorDto.ls_nums">
+            <summary>
+            零售-应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.CIndicatorDto.zs_nums">
+            <summary>
+            住宿-应报企业数设置
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.CIndicatorDto.cy_nums">
+            <summary>
+            餐饮-应报企业数设置
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Dto.DIndicatorDto">
+            <summary>
+            商品房销售面积
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Dto.DIndicatorDto.items">
+            <summary>
+            调整归属辖区项目
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.BaseImportService`2.Repository">
+            <summary>
+            数据仓储
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.BaseImportService`2.#ctor(FreeSql.IFreeSqlRepository{`0})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="F:Admin.NET.Application.BaseImportService`2.BeforeImportAction">
+            <summary>
+            导入前验证或处理
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.BaseImportService`2.AfterImportAction">
+            <summary>
+            导入后处理
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.BaseImportService`2.Import(System.Int32,System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <param name="file"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Admin.NET.Application.BaseImportService`2.GetCvsImportData(System.String)">
+            <summary>
+            获取cvs格式的数据
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.BaseImportService`2.GetImportData(System.String)">
+            <summary>
+            根据文件路径获取文件内容
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.BaseImportService`2.GetExcelDataByNpoi(System.String)">
+            <summary>
+            通过npoi读取excel的数据
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.BaseImportService`2.ChangeType(System.Object,System.Reflection.PropertyInfo)">
+            <summary>
+            转换数据类型
+            </summary>
+            <param name="value"></param>
+            <param name="propertyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.BaseImportService`2.GetImportDataFromMiniExcel(System.String)">
+            <summary>
+            通过MiniExcel获取数据
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.ColumnProperty">
+            <summary>
+            导入数据的时候，属性和列的映射关系
+            如果ColumnIndex>0 优先取 ColumnIndex 的值。ColumnIndex从1开始
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ColumnProperty.Property">
+            <summary>
+            类型属性
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.ColumnProperty.ColumnName">
+            <summary>
+            excel列名
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.IIndicatorDocService.Import(Admin.NET.Application.Dto.DocImportDto)">
+            <summary>
+            导入文件数据到数据库
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.IndicatorExportOutPut.IndicatorType">
+            <summary>
+            统计指标
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.IndicatorExportOutPut.AllOutPut">
+            <summary>
+            全区
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.IndicatorExportOutPut.NZOutPut">
+            <summary>
+            南庄
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.IndicatorExportOutPut.ZMOutPut">
+            <summary>
+            祖庙
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.IndicatorExportOutPut.SWOutPut">
+            <summary>
+            石湾
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.IndicatorExportOutPut.ZCOutPut">
+            <summary>
+            张槎
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.AllCount">
+            <summary>
+            总量(亿元)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.AddRate">
+            <summary>
+            增速(%)
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.ReportedCount">
+            <summary>
+            已报企业
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.ReportCount">
+            <summary>
+            应报企业
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.ReportRate">
+            <summary>
+            上报率
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.TargetAllCount">
+            <summary>
+            任务目标累计总量
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.TargetAllAddRate">
+            <summary>
+            任务目标累计增速
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.TargetCount">
+            <summary>
+            任务目标总量
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.TargetAddRate">
+            <summary>
+            任务目标增速
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.TargetExpectCount">
+            <summary>
+            任务目标预期总量
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Application.Service.IndiCatorExport.Dto.OutPutBase.TargetExpectAddRate">
+            <summary>
+            任务目标预期增速
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService">
+            <summary>
+            指标导出相关服务
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportA(System.Int32,System.Int32)">
+            <summary>
+            规上工业增加值指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportB(System.Int32,System.Int32)">
+            <summary>
+            固定资产投资额指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportC(System.Int32,System.Int32)">
+            <summary>
+            工业投资指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportD(System.Int32,System.Int32)">
+            <summary>
+            工业技改投资指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportE(System.Int32,System.Int32)">
+            <summary>
+            批发业商品销售额指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportF(System.Int32,System.Int32)">
+            <summary>
+            零售业商品销售额指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportG(System.Int32,System.Int32)">
+            <summary>
+            住宿业商品销售额指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportH(System.Int32,System.Int32)">
+            <summary>
+            餐饮业商品销售额指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportI(System.Int32,System.Int32)">
+            <summary>
+            商品房销售指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportJ(System.Int32,System.Int32)">
+            <summary>
+            商品房销售指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.ExportK(System.Int32,System.Int32)">
+            <summary>
+            建筑安装工程投资指标导出
+            </summary>
+            <param name="year">年(格式:yyyy)</param>
+             <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportA_AllCount(System.String)">
+            <summary>
+            计算各街道总量--规上工业增加值指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportA_AddRate(System.String)">
+            <summary>
+            计算各街道增速--规上工业增加值指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportA_ReportRate(System.String)">
+            <summary>
+            计算各街道上报率--规上工业增加值指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetNowAddValue_A(System.String,System.String)">
+            <summary>
+            获取对应街道的今年现价增加值--规上工业增加值指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetCompanyFromStreet_A(System.String,System.String)">
+            <summary>
+            获取对应街道的企业信息--规上工业增加值指标
+            </summary>
+            <param name="areCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRateFromStreet_A(System.String,System.String)">
+            <summary>
+            获取对应街道企业的增加率--规上工业增加值指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_A(System.String,System.String)">
+            <summary>
+            获取对应街道上报企业信息--规上工业增加值指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportB_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--固定资产投资额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportB_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--固定资产投资额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportB_ReportRate(System.String)">
+            <summary>
+            计算各街道对应上报率--固定资产投资额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_B(System.String,System.String)">
+            <summary>
+            获取各街道对应总量--固定资产投资额指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportCountOuter_B(System.String)">
+            <summary>
+            获取各街道区外报数项目对应金额---固定资产投资额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetGradesProjectStreet206_B(System.String)">
+            <summary>
+            转换206分数表数据
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetGradesProjectStreetX2041_B(System.String)">
+            <summary>
+            转换X204-1分数项目表数据
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_B(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--固定资产投资额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_B(System.String,System.String)">
+            <summary>
+            获取各街道上报数和应报数---固定资产投资额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportC_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--工业投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportC_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--工业投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_C(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--工业投资指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_C(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--工业投资指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportD_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--工业技改投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportD_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--工业技改投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_D(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--工业技改投资指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_D(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--工业技改投资指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportE_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--批发业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportE_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--批发业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportE_ReportRate(System.String)">
+            <summary>
+            计算各街道上报率--批发业商品销售额指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_E(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--批发业商品销售额指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_E(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--批发业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_E(System.String,System.String)">
+            <summary>
+            获取对应街道上报企业信息--批发业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportF_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--零售业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportF_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--零售业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportF_ReportRate(System.String)">
+            <summary>
+            计算各街道上报率--零售业商品销售额指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_F(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--零售业商品销售额指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_F(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--零售业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_F(System.String,System.String)">
+            <summary>
+            获取对应街道上报企业信息--零售业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportG_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--住宿业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportG_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--住宿业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportG_ReportRate(System.String)">
+            <summary>
+            计算各街道上报率--住宿业商品销售额指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_G(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--住宿业商品销售额指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_G(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--住宿业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_G(System.String,System.String)">
+            <summary>
+            获取对应街道上报企业信息--住宿业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportH_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--餐饮业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportH_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--餐饮业商品销售额指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportH_ReportRate(System.String)">
+            <summary>
+            计算各街道上报率--餐饮业商品销售额指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_H(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--餐饮业商品销售额指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_H(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--餐饮业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_H(System.String,System.String)">
+            <summary>
+            获取对应街道上报企业信息--餐饮业商品销售额指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportI_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--商品房销售指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportI_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--商品房销售指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportI_ReportRate(System.String)">
+            <summary>
+            计算各街道上报率--商品房销售指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_I(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--商品房销售指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_I(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--商品房销售指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_I(System.String,System.String)">
+            <summary>
+            获取对应街道上报企业信息--商品房销售指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportJ_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--建筑业总产值(季度数)指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportJ_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--建筑业总产值(季度数)指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportJ_ReportRate(System.String)">
+            <summary>
+            计算各街道上报率--建筑业总产值(季度数)指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_J(System.String,System.String)">
+            <summary>
+            转换各街道对应总量--建筑业总产值(季度数)指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_J(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--建筑业总产值(季度数)指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_J(System.String,System.String)">
+            <summary>
+            获取对应街道上报企业信息--建筑业总产值(季度数)指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportK_AllCount(System.String)">
+            <summary>
+            计算各街道对应总量--建筑安装工程投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportK_AddRate(System.String)">
+            <summary>
+            计算各街道对应增速--建筑安装工程投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExportK_ReportRate(System.String)">
+            <summary>
+            计算各街道对应上报率--建筑安装工程投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAllCountFromStreet_K(System.String,System.String)">
+            <summary>
+            获取各街道对应总量--建筑安装工程投资指标
+            </summary>
+            <param name="areaCode"></param>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportCountOuter_K(System.String)">
+            <summary>
+            获取各街道区外报数项目对应金额---建筑安装工程投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetGradesProjectStreet206_K(System.String)">
+            <summary>
+            转换206分数表数据--建筑安装工程投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetGradesProjectStreetX2041_K(System.String)">
+            <summary>
+            转换X204-1分数项目表数据--建筑安装工程投资指标
+            </summary>
+            <param name="realMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetAddRteFromStreet_K(System.String,System.String,System.Double)">
+            <summary>
+            转换对应街道的增速--建筑安装工程投资指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="allCount">对应街道(区)的总量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetReportInfoFromStreet_K(System.String,System.String)">
+            <summary>
+            获取各街道上报数和应报数---建筑安装工程投资指标
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetExport_Target(System.String,System.String)">
+            <summary>
+            计算各街道任务目标--规上工业增加值指标
+            </summary>
+            <param name="realMonth">所属月份(格式:yyyyMM)</param>
+             <param name="IndicatorType">指标类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetTargetInfoFromStreet(System.String,System.String,System.String)">
+            <summary>
+            获取任务目标设定信息
+            </summary>
+            <param name="areaCode">440604100 南庄、440604010 石湾、440604011 张槎、440604012 祖庙</param>
+            <param name="realMonth">所属月份(格式：yyyyMM)</param>
+            <param name="IndicatorType">指标类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetRealMonth(System.Int32,System.Int32)">
+            <summary>
+            转换年月格式
+            </summary>
+            <param name="year">年(格式：yyyy)</param>
+            <param name="month">月(格式:MM)</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.Service.IndiCatorExport.IndicatorExportService.GetHydmRange_C">
+            <summary>
+            转换行业代码GB/T4754-2017"前两位值为06-46范围
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.Enum.E_IndicatorCategory">
+            <summary>
+            指标类别
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_IndicatorCategory.None">
+            <summary>
+            规上工业增加值
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_IndicatorCategory.A">
+            <summary>
+            规上工业增加值
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_IndicatorCategory.B">
+            <summary>
+            固定资产投资额/工业投资/工业技改投资/建筑安装工程投资
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_IndicatorCategory.C">
+            <summary>
+            批发/零售/住宿/餐饮业销售额
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_IndicatorCategory.D">
+            <summary>
+            商品房销售面积
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_IndicatorCategory.E">
+            <summary>
+            建筑业总产值（季度数）
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Enum.E_Indicator">
+            <summary>
+            指标
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.A">
+            <summary>
+            规上工业增加值
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.B">
+            <summary>
+            固定资产投资额
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.C">
+            <summary>
+            工业投资
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.D">
+            <summary>
+            工业技改投资
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.E">
+            <summary>
+            批发业商品销售额
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.F">
+            <summary>
+            零售业商品销售额 
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.G">
+            <summary>
+            住宿业营业额
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.H">
+            <summary>
+            餐饮业营业额
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.I">
+            <summary>
+            商品房销售面积
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.J">
+            <summary>
+            建筑业总产值（季度数）
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_Indicator.K">
+            <summary>
+            建筑安装工程投资
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Application.Enum.E_ReportDataType">
+            <summary>
+            区内报数类型
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_ReportDataType.A">
+            <summary>
+            固定资产投资
+            </summary>
+        </member>
+        <member name="F:Admin.NET.Application.Enum.E_ReportDataType.B">
+            <summary>
+            建筑安装工程投资
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.IIndicatorService.GetIndicatorDocs">
+            <summary>
+            获取所有的指标文档
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IIndicatorService.GetIndicatorDoc(System.Int32)">
+            <summary>
+            获取指标文档实体类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IIndicatorService.Import(System.Int32,System.Int32,System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入文件
+            </summary>
+            <param name="year">年</param>
+            <param name="month">月</param>
+            <param name="docId">文档类型</param>
+            <param name="file">文件内容</param>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.IndicatorService">
+            <summary>
+            经济指标数据相关服务
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetIndicatorCategories(System.Int32,System.Int32)">
+            <summary>
+            获取指标更新信息
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.Upload(Microsoft.AspNetCore.Http.IFormFile,System.Boolean)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="file"></param>
+            <param name="required">是否检查文件名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.Download(System.Int32)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="id"> doc_log 记录的id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.SaveDocs(Admin.NET.Application.Dto.IndicatorDocUpdate)">
+            <summary>
+            保存指标文档
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.Import(System.Int32,System.Int32,System.Int32,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入文件
+            </summary>
+            <param name="year">年</param>
+            <param name="month">月</param>
+            <param name="docId">文档类型</param>
+            <param name="file">文件内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetIndicatorDocsByCategoryId(Admin.NET.Application.Enum.E_IndicatorCategory)">
+            <summary>
+            根据类型id 获取配置的文档集合
+            通过实体类标注的IndicatorDocumentAttribute来获取
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetA(System.Int32,System.Int32)">
+            <summary>
+            规上工业增加值
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetDefaultReportNumSetting(System.String,Admin.NET.Application.Enum.E_Indicator)">
+            <summary>
+            获取默认的 企业应报数量
+            </summary>
+            <param name="month"></param>
+            <param name="e_Indicator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.LoadDocumentList(Admin.NET.Application.Dto.BaseIndicatorDto,Admin.NET.Application.Enum.E_IndicatorCategory)">
+            <summary>
+            加载需要的指标文档列表
+            </summary>
+            <param name="dto"></param>
+            <param name="indicatorCategory"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetB(System.Int32,System.Int32)">
+            <summary>
+            固定资产投资额/工业投资/工业技改投资/建筑安装工程投资
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetC(System.Int32,System.Int32)">
+            <summary>
+            批发/零售/住宿/餐饮业销售额
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetD(System.Int32,System.Int32)">
+            <summary>
+            商品房销售面积
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetZ">
+            <summary>
+            获取任务目标文档集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetE(System.Int32,System.Int32)">
+            <summary>
+            建筑业总产值（季度数）
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.GetProjectDetail(System.Int32,System.Int32,System.String)">
+            <summary>
+            获取项目信息
+            </summary>
+            <param name="year"></param>
+            <param name="month"></param>
+            <param name="xmbm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.SaveA(Admin.NET.Application.Dto.AIndicatorDto)">
+            <summary>
+            规上工业增加值 提交
+            </summary>
+            <param name="updateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.SaveB(Admin.NET.Application.Dto.BIndicatorDto)">
+            <summary>
+            固定资产投资额/工业投资/工业技改投资/建筑安装工程投资 提交
+            </summary>
+            <param name="updateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.SaveC(Admin.NET.Application.Dto.CIndicatorDto)">
+            <summary>
+            批发/零售/住宿/餐饮业销售额 提交
+            </summary>
+            <param name="updateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.SaveD(Admin.NET.Application.Dto.DIndicatorDto)">
+            <summary>
+            商品房销售面积 提交
+            </summary>
+            <param name="updateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Admin.NET.Application.IndicatorService.SaveE(Admin.NET.Application.Dto.BaseIndicatorDto)">
+            <summary>
+            建筑业总产值（季度数） 提交
+            </summary>
+            <param name="updateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Admin.NET.Application.SpareTimeDemo">
+            <summary>
+            定时任务demo
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.SpareTimeDemo.ExecSql(Furion.TaskScheduler.SpareTimer,System.Int64)">
+            <summary>
+            3秒后出勤统计
+            </summary>
+            <param name="timer">参数</param>
+            <param name="count">次数</param>
+        </member>
+        <member name="T:Admin.NET.Application.SystemAppService">
+            <summary>
+            系统服务接口
+            </summary>
+        </member>
+        <member name="M:Admin.NET.Application.SystemAppService.GetDescription">
+            <summary>
+            获取系统描述
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
